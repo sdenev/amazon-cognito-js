@@ -9,9 +9,7 @@
     "url": "http://aws.amazon.com"
   },
   "homepage": "http://aws.amazon.com/cognito",
-  "contributors": [
-    "Mike Murry <mmurry@amazon.com>"
-  ],
+  "contributors": ["Mike Murry <mmurry@amazon.com>"],
   "repository": {
     "type": "git",
     "url": "https://github.com/aws/amazon-cognito-js.git"
@@ -22,9 +20,10 @@
       "url": "http://aws.amazon.com/asl"
     }
   ],
-  "keywords": ["amazon","aws","cognito","identity","sync"],
+  "keywords": ["amazon", "aws", "cognito", "identity", "sync"],
   "scripts": {
-    "build": "grunt uglify umd"
+    "build": "grunt uglify umd:all",
+    "build-rn": "grunt uglify umd:rn"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
